@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/header/Header.js';
 import Home from './components/homePage/Home.js';
 import CheckoutPage from './components/CheckoutPage';
+import Footer from "./footer"
 
 function App() {
   return(
@@ -23,7 +24,9 @@ function App() {
         
         <Header />
          <Home/>
+
        </Route>
+       <Footer/>
 
        </Switch>
          </div>
