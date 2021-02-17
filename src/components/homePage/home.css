@@ -1,0 +1,64 @@
+.home{
+	margin-left: auto;
+	margin-right: auto;
+	object-fit: contain;
+}
+.home_banner{
+	background-size: cover;
+width: 100%;
+background-size: cover;
+height: 500px;
+background:linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+
+margin-bottom: -380px;
+z-index: -1;
+}
+.home_raw{
+	z-index: 1;
+	display: flex;
+	margin: 3px;
+	margin-bottom: 1px;
+	object-fit: contain;
+
+}
+.homeright_content{
+	display: flex;
+	flex-direction: column;
+	padding: 16px;
+	height: 150px;
+	width: 300px;
+	margin-right: 27px;
+	margin-left: 10px;
+	margin-top: 8px;
+	background-color: white;
+	text-align: left;
+
+
+}
+.homeright_content  button{
+	margin-top: 12px;
+	width: 100%;
+	padding: 7px;
+   border-radius: 5px;
+	background-color: rgba(252, 190, 85, 1);
+	font-size: 13px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+.homeright_content  button:hover{
+	cursor: pointer;
+	background-color: rgba(252, 209, 100, 1);
+}
+
+.homeright_content img{
+
+	max-height: 330px;
+	max-width: 290px;
+	margin-top: 50px;
+	margin-left: -10px
+
+}
+.homeright_content img:hover{
+	cursor: pointer;
+}
+
