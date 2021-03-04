@@ -2,9 +2,10 @@ import React from 'react';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import './App.css';
 import Header from './components/header/Header.js';
+import BottomHeader from './components/bottomHeader/bottomNavbar';
 import Home from './components/homePage/Home.js';
 import CheckoutPage from './components/CheckoutPage';
-import Footer from "./footer"
+import Footer from './components/footer/footer'
 
 function App() {
   return(
@@ -23,13 +24,17 @@ function App() {
         <Route path="/">
         
         <Header />
+        <BottomHeader/>
          <Home/>
+                  <Footer/>
+
+
 
        </Route>
-       <Footer/>
 
        </Switch>
          </div>
+         
          </Router>
      
      )

@@ -1,0 +1,8 @@
+.image{
+	width: 100vw;
+	height: 70vh;
+	background-size: cover;
+	z-index: -1;
+	position: relative;
+
+}

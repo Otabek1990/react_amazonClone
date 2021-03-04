@@ -2,14 +2,17 @@
 	margin-left: auto;
 	margin-right: auto;
 	object-fit: contain;
+	margin-bottom: 210px
+
 }
+
 .home_banner{
 	background-size: cover;
 width: 100%;
 background-size: cover;
 height: 500px;
 background:linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-
+position: relative;
 margin-bottom: -380px;
 z-index: -1;
 }
@@ -17,8 +20,10 @@ z-index: -1;
 	z-index: 1;
 	display: flex;
 	margin: 3px;
-	margin-bottom: 1px;
-	object-fit: contain;
+	margin-bottom: 10px;
+	top:360px;
+	position: absolute;
+	left:20px
 
 }
 .homeright_content{

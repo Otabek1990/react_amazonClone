@@ -1,0 +1,46 @@
+.bottom_navbar{
+	padding: 4px;
+	background-color:#343838;
+	display: flex;
+text-align: center;
+align-items: center;
+position:sticky;
+object-fit: contain;
+}
+
+.menu_icon{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.menu_icon,
+.today_deal,
+.customer_service,
+.gift_cards,
+.sell,
+.registry,
+.responce_covid{
+	margin: 0 4px;
+		padding:5px;
+		font-size: 14px;
+		cursor: pointer;
+		font-family:sans-serif;
+		color:white
+
+}
+
+.menu_icon:hover,
+.today_deal:hover,
+.customer_service:hover,
+.gift_cards:hover,
+.sell:hover,
+.registry:hover,
+.responce_covid:hover
+{
+outline:1px solid #ffff;
+
+} 
+.responce_covid{
+	margin-left: 625px
+}

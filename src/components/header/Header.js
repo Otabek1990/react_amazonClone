@@ -1,15 +1,26 @@
 import React from 'react';
 import  "./header.css";
 import {Link} from 'react-router-dom';
-import SearchIcon from '@material-ui/icons/Search';
+import {useSelector} from "react-redux";
+//import SearchIcon from '@material-ui/icons/Search';
+//import {useContextValue} from '../../StateProvider';
+import SearchSharpIcon from '@material-ui/icons/SearchSharp';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
-import {useContextValue} from '../../StateProvider';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import InputLabel from '@material-ui/core/InputLabel';
+import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
 
 
 
 const Header = (props) => {
 
-	const[{basket},dispatch]=useContextValue()
+	//const[{basket},dispatch]=useContextValue()
+	const basket=useSelector(state=>state.basketProduct.basket)
+	console.log(basket)
+	console.log(basket[0])
+	console.log(basket.length)
 
   return (
     <nav className="header">
@@ -20,15 +31,35 @@ src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
  alt="amazon"
  />
  </Link>
+ <div className="location_deliver">
+ <LocationOnIcon className="location_icon"/>
+ <div className="location_name">
+ <p className="p_deliver">Deliver to</p>
+ <p className="location_state">Uzbekistan</p>
+ </div>
+
+ </div>
 
  <div className="header_search">
 <input
  type="text"
 className="header_searchinput"
 />
-<SearchIcon className="header_searchicon"/>
+<button className="header_search_btn">
+<SearchSharpIcon className="header_searchicon"/>
+</button>
 
  </div>
+       <div >
+       <select className="select_language">
+       <option id="eng">Eng</option>
+       <option id="french">French</option>
+       <option id="russian">Russian</option>
+       <option id="Uzbek">Uzbek</option>
+     
+       </select>
+
+       </div>
 
  <div className="header_links" >
 
@@ -61,7 +92,7 @@ className="header_searchinput"
  className="header_option">
  <div className="header_basket">
  <ShoppingBasketIcon className="header_shoppingbasket"/>
- <span className="header_productquantity">0 and {basket.length}</span>
+ <span className="header_productquantity">{basket.length}</span>
  </div>
  </Link>
 

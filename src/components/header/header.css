@@ -1,6 +1,6 @@
 .header{
 	background-color:#131921;
-	height: 60px;
+	height: 64px;
 	padding: 8px 0;
 	display: flex;
 	text-align: center;
@@ -18,31 +18,91 @@
 	padding-top: 10px;
 	
 }
+.location_deliver{
+	display: flex;
+	flex-direction: row;
+	color: gray;
+	margin-right: 8px;
 
+}
+.location_deliver:hover{
+	 outline: 1px solid #fff;
+	transform: none;
+	cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+
+.location_icon{
+	color:#ffff;
+	margin-top: 12px;
+	height: 6px
+}
+.location_name{
+	margin-top: 5px;
+	margin-right: 8px;
+	display: flex;
+	flex-direction: column;
+}
+.p_deliver{
+	font-size: 13px;
+	margin-left: -18px;
+}
+.location_state{
+	color: #ffff;
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 14px
+}
 .header_search{
 	display: flex;
 	flex: 1;
-	margin-top: 7px;
+	margin-top: 4px;
 
 
 }
 .header_searchinput{
-	width: 100%;
+	width: 96%;
 	height: 12px;
-	padding: 12px ;
-	border:none;
+	padding: 18px ;
+border-radius: 4px;
+	position: relative;
+}
 
+.header_search_btn{
+	padding: 5px;
+	position: absolute;
+	right: 393px;
+	background-color: orange;
+	border: none;
+	margin-top: 2px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	padding-left: 12px
 }
 
 .header_searchicon{
-	background-color: orange;
-	padding: 5px;
+	transform: scale(1.2);
+}
+.header_searchicon:hover{
+	cursor: pointer;
+}
+.select_language{
+	background-color:orange;
+	font-family:sans-serif;
+	font-weight: bolder;
+	cursor: pointer;
+	padding: 10px 0;
+	margin-top: 5px;
+margin-right: 7px;
+}
+.select_language:hover{
+	outline: 1px solid
 
 }
-
 .header_links{
 	display: flex;
-	margin: 5px 0;
+	margin: 5px 2px;
 
 }
 .header_option{
