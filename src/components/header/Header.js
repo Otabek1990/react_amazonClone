@@ -11,7 +11,7 @@ import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
-
+import Amazonlogo from '../../images/amazlogo.png'
 
 
 const Header = (props) => {
@@ -19,15 +19,14 @@ const Header = (props) => {
 	//const[{basket},dispatch]=useContextValue()
 	const basket=useSelector(state=>state.basketProduct.basket)
 	console.log(basket)
-	console.log(basket[0])
-	console.log(basket.length)
+
 
   return (
     <nav className="header">
     <Link to="/" key="home">
 <img 
 className="header_logo" 
-src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+src={Amazonlogo}
  alt="amazon"
  />
  </Link>
@@ -52,7 +51,7 @@ className="header_searchinput"
  </div>
        <div >
        <select className="select_language">
-       <option id="eng">Eng</option>
+       <option id="elnur">Elnur</option>
        <option id="french">French</option>
        <option id="russian">Russian</option>
        <option id="Uzbek">Uzbek</option>

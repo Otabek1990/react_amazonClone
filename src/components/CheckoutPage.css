@@ -1,0 +1,65 @@
+body{
+	background-color: blue
+}
+.checkOutPage{
+	display: flex;
+	flex-direction: row;
+margin-top: 20px;
+padding: 10px 0;
+
+
+}
+
+.list{
+background-color: gray;
+	width: 500px;
+	height: 450px;
+	margin: 15px ;
+	padding: 10px;
+	padding-left: 10px;
+	border: 3px solid gray;
+	border-radius: 3px
+
+
+}
+.allInfos{
+	display: flex;
+	flex-direction: row;
+}
+.infos{
+	margin-top: 5px;
+	font-size: 18px;
+	padding: 10px;
+
+}
+.infos:hover{
+	outline: none;
+	border-bottom: none;
+}
+img{
+	margin-top: 10px;
+	height: 400px;
+	width: 320px
+
+}
+.delete_btn{
+	width:120px;
+	margin-bottom: 5px;
+	margin-top: 8px;
+	height: 30px;
+	cursor: pointer;
+	border-radius: 2px;
+	border: none;
+		outline: none;
+
+
+}
+.delete_btn:hover{
+	background-color:yellow;
+	color: gray;
+}
+.add_btn,.minus_btn{
+	height: 30px;
+	margin: 5px;
+	margin-left: 0
+}

@@ -19,17 +19,12 @@ function App() {
        <Route path="/checkout">
          <Header />
        <CheckoutPage/>
-       Checkout Page
        </Route>
         <Route path="/">
-        
         <Header />
         <BottomHeader/>
          <Home/>
-                  <Footer/>
-
-
-
+        <Footer/>
        </Route>
 
        </Switch>

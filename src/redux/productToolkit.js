@@ -1,7 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = { 
-	basket:[]
+	basket:[],
+  productInfos:[]
 
  }
 
@@ -15,8 +16,11 @@ const counterSlice = createSlice({
     take(state,action) {
       state.basket.splice(0,action.payload)
     },
-    },
+    addToProductInfos:(state,action)=>{
+      state.productInfos.push(action.payload)
+    }
+    }
 })
 
-export const { add, take } = counterSlice.actions
+export const { add, take,addToProductInfos } = counterSlice.actions
 export default counterSlice.reducer
